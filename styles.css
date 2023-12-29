@@ -16,13 +16,12 @@ input{
 }
 
 button{
-	display: flex;
 	height: 4%;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(10, 10, 127);
 	color: #ffff;
-	border: none;
+	border: 1px rgb(10, 10, 127);;
 	margin-top: 0.5%;
 	font-weight: bold;
 }
@@ -54,4 +53,8 @@ input:focus{
 a:hover{
 	text-decoration: underline 3px solid black;
 	
+}
+
+#deleteBtn{
+	background-color: rgb(56, 56, 247);;
 }
