@@ -3,6 +3,7 @@ body{
 	height: 100vh;
 	font-family: Roboto,sans-serif;
 	padding: 10px;
+	background: linear-gradient(to left, rgb(139, 9, 124),rgb(245, 4, 217) );
 }
 
 input{
@@ -10,6 +11,7 @@ input{
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	outline: none;
 }
 
 button{
@@ -18,9 +20,38 @@ button{
 	height: 4%;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(10, 127, 32);
+	background-color: rgb(10, 10, 127);
 	color: #ffff;
 	border: none;
 	margin-top: 0.5%;
 	font-weight: bold;
+}
+
+ul{
+	margin-top:20px;
+	list-style: none;
+	padding: 0%;
+
+}
+
+li{
+	margin-bottom:15px;
+
+}
+
+a{
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	
+}
+
+input:focus{
+	border: 3px solid black;
+	transition: 1s;
+}
+
+a:hover{
+	text-decoration: underline 3px solid black;
+	
 }
