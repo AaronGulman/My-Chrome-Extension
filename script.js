@@ -1,12 +1,31 @@
-let btn = document.querySelector('#inputBtn')
 let myLeads = [];
+let btn = document.querySelector('#inputBtn')
 let userInput = document.getElementById('userInput')
+let uol = document.getElementById('ul');
+
+
+
 
 btn.addEventListener('click',()=>{
 myLeads.push(userInput.value)
-console.log(myLeads);
+userInput.value = "";
+renderMyLeads();
+
 })
 
+
+function renderMyLeads(){
+let list = document.createElement('li')
+uol.appendChild(list);
+list.style.textDecoration='none';
+let listItems = ''
 for(let i = 0; i < myLeads.length; i++){
-	console.log(myLeads[i])
+
+	listItems +=`
+	<li>
+		<a target='_blank' href='${myLeads[i]}'>${myLeads[i]}</a>
+	 </li>`;
+	}
+uol.innerHTML = listItems;
 }
+
