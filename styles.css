@@ -4,6 +4,7 @@ body{
 	font-family: Roboto,sans-serif;
 	padding: 10px;
 	background: linear-gradient(to left, rgb(139, 9, 124),rgb(245, 4, 217) );
+	min-width:400px;
 }
 
 input{
