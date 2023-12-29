@@ -4,13 +4,17 @@ let userInput = document.getElementById('userInput')
 let uol = document.getElementById('ul');
 
 
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem('myLeads'))
+console.log(leadsFromLocalStorage)
 
 
 btn.addEventListener('click',()=>{
 myLeads.push(userInput.value)
 userInput.value = "";
+localStorage.getItem("myLeads", JSON.stringify(myLeads));
 renderMyLeads();
-
+// verification
+console.log(localStorage.getItem("myLeads"));
 })
 
 
